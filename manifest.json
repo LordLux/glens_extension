@@ -1,5 +1,4 @@
 {
-  "id": "lordlux.search-with-google-lens",
   "author": "LordLux",
   "manifest_version": 3,
   "name": "Search with Google Lens",
@@ -9,12 +8,18 @@
     "contextMenus"
   ],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": [ "background.js" ]
   },
-  
+
   "icons": {
     "16": "icons/icon-16.png",
     "32": "icons/icon-32.png",
     "48": "icons/icon-48.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "@lordlux.search_with_google_lens",
+      "strict_min_version": "58.0"
+    }
   }
 }
